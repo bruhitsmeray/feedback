@@ -1,0 +1,79 @@
+section{
+    padding: 16px 0px;
+}
+
+select{
+    border: 1px solid black;
+    margin: 10px 0px;
+
+    height: 42px;
+    width: 100%;
+}
+
+input{
+    margin: 10px 0px;
+
+    height: 42px;
+    width: 100%;
+}
+
+.title{
+    margin: 8px 0px;
+}
+
+.title h2{
+    font-size: 1.5rem;
+    line-height: 32px;
+}
+
+.title h2 span{
+    background-color: rgba(20, 20, 20, 1);
+    border-radius: 10px 0px;
+
+    color: white;
+    padding: 6px 12px;
+}
+
+.container{
+    background: white;
+    border-radius: 10px;
+
+    padding: 18px 25px 20px;
+}
+
+.form-grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0px 10px 0px;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group textarea{
+    border: 1px solid black;
+    padding: 0px 10px;
+}
+
+.form-group-01 input,
+.form-group-01 textarea{
+    border: 1px solid black;
+    border-radius: 10px 0px 0px 0px;
+    padding: 0px 10px;
+}
+
+.form-group-02 input,
+.form-group-02 textarea{
+    border: 1px solid black;
+    border-radius: 0px 10px 0px 0px;
+    padding: 0px 10px;
+}
+
+.mail{
+    margin: 10px 0px 20px 0px;
+}
+
+.contact-btn{
+    border: 1px solid black;
+    border-radius: 0px 0px 10px 10px;
+}
