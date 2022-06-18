@@ -2,19 +2,26 @@
     box-sizing: border-box;
     font-family: sans-serif;
 
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
     align-items: center;
-    background-color: rgba(20, 20, 20, 1);
-
     display: flex;
     justify-content: center;
-
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    transition: background 0.2s linear;
+}
+
+body.dark{
+    background-color: rgb(40, 40, 40);
+}
+
+body.dark .heading h1 span{
+    background-color: white;
+    color: rgba(20, 20, 20, 1);
 }
 
 a{
@@ -23,6 +30,11 @@ a{
 
 ul{
     list-style: none;
+}
+
+.container{
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .row{
@@ -49,6 +61,45 @@ ul{
 }
 
 i{
-     text-align: center;
-     justify-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/*=================================*/
+/*=============Heading=============*/
+/*=================================*/
+
+.heading{
+    margin: 20px 0px;
+}
+
+.heading h1{
+    font-size: 3.5rem;
+    line-height: 72px;
+}
+
+.heading h1 span{
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px 0px 10px 0px;
+
+    color: white;
+    padding: 6px 12px;
+}
+
+/*=================================*/
+/*==============Footer=============*/
+/*=================================*/
+
+footer {
+    padding: 40px;
+}
+
+footer p{
+    color: rgb(40, 40, 40);
+    text-align: center;
+}
+
+body.dark footer p {
+    color: #cacaca;
+    text-align: center;
 }

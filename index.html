@@ -19,15 +19,18 @@
     
     <body id="main">
         <div class="nav-container">
-            <div class="navbar">
-                <a href="https://dev-whiteex.github.io/" class="logo">whiteex</a>
+            <header>
+                <a href="index.html" class="logo">whiteex</a>
                 <nav>
-                    <ul>
-                        <li><a href="https://linktr.ee/whiteex" class="basic" target="_blank">Linktree</a></li>
-                        <li><a href="https://github.com/dev-whiteex" class="special" target="_blank">GitHub</a></li>
+                    <ul class="nav-links">
+                        <li><a href="https://dev-whiteex.github.io/" target="_blank">Home</a></li>
+                        <li><a href="https://ko-fi.com/whiteex" target="_blank">Buy me a coffee</a></li>
+                        <li><a href="https://github.com/dev-whiteex" target="_blank">Github</a></li>
                     </ul>
                 </nav>
-            </div>
+                <input type="checkbox" class="checkbox" id="checkbox" checked>
+                <label for="checkbox" class="label"><div class="ball"></div></label>
+            </header>
             <div class="message">
                 <h3><a href="https://discord.com/oauth2/authorize?client_id=772944646195511297&scope=bot&permissions=2129853695" target="_blank">Eutera 4.5.2 is now available.</a></h3>
             </div>
@@ -82,5 +85,8 @@
                 </div>
             </section>
         </div>
+
+        <script src="scripts/preferences/dark.js" type="module"></script>
+        <script src="scripts/jquery.js"></script>
     </body>
 </html>

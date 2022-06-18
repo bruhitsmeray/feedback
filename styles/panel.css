@@ -3,42 +3,57 @@ section{
 }
 
 select{
-    border: 1px solid black;
     margin: 10px 0px;
-
     height: 42px;
     width: 100%;
 }
 
 input{
     margin: 10px 0px;
-
     height: 42px;
     width: 100%;
 }
 
-.title{
-    margin: 8px 0px;
+label{
+    color: black;
+}
+
+body.dark label{
+    color: white;
 }
 
 .title h2{
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 32px;
 }
 
 .title h2 span{
-    background-color: rgba(20, 20, 20, 1);
-    border-radius: 10px 0px;
+    color: black;
+}
 
+body.dark .title h2 span{
     color: white;
-    padding: 6px 12px;
 }
 
 .container{
-    background: white;
+    background-color: #f4f5ff;
+    border: 1px solid rgba(51, 51, 51, 0.4);
     border-radius: 10px;
 
     padding: 18px 25px 20px;
+}
+
+body.dark .container{
+    background-color: #333;
+    border: 1px solid rgba(244, 245, 255, 0.4);
+}
+
+.content p{
+    padding-bottom: 10px;
+}
+
+body.dark .content p{
+    color: white;
 }
 
 .form-grid{
@@ -74,6 +89,5 @@ input{
 }
 
 .contact-btn{
-    border: 1px solid black;
     border-radius: 0px 0px 10px 10px;
 }
