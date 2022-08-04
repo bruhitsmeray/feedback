@@ -1,105 +1,105 @@
-*{
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
 
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    overflow-x: hidden;
-    transition: background 0.2s linear;
+:root {
+  --bg-color: #fff;
+  --box-color: #f4f5ff;
+  --border-color: rgba(50, 50, 50, 0.4);
+  --font-color: #424242;
+
+  --heading-color: rgb(40, 40, 40);
+  --heading-font-color: #fff;
+
+  --primary-color: #e07a00;
+  --secondary-color: #955100;
 }
 
-body.dark{
-    background-color: rgb(40, 40, 40);
+[data-theme="dark"] {
+  --bg-color: #282828;
+  --box-color: #333;
+  --border-color: rgba(244, 245, 255, 0.4);
+  --font-color: #fff;
+
+  --heading-color: #fff;
+  --heading-font-color: #424242;
+
+  --primary-color: #fbab4d;
+  --secondary-color: #fdcf99;
 }
 
-body.dark .heading h1 span{
-    background-color: white;
-    color: rgba(20, 20, 20, 1);
+body {
+  align-items: center;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background 0.2s linear;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-.container{
-    padding-left: 8%;
-    padding-right: 8%;
+.container {
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
-.row{
-    display: flex;
-    margin: 300px 0;
-    text-align: center;
-    justify-content: center;
+.row {
+  display: flex;
+  margin: 300px 0;
+  text-align: center;
+  justify-content: center;
 }
 
-.col-1{
-    color: #fff;
-    position: relative;
-    margin-left: 50px;
-    flex-basis: 40%;
+.col-1 {
+  color: var(--font-color);
+  position: relative;
+  margin-left: 50px;
+  flex-basis: 40%;
 }
 
-.col-1 h2{
-    font-size: 48px;
+.col-1 h2 {
+  font-size: 48px;
 }
 
-.col-1 h3{
-    font-size: 24px;
-    margin: 20px 0 10px;
+.col-1 h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
 }
 
-i{
-    text-align: center;
-    justify-content: center;
+i {
+  text-align: center;
+  justify-content: center;
 }
 
 /*=================================*/
 /*=============Heading=============*/
 /*=================================*/
 
-.heading{
-    margin: 20px 0px;
+.heading {
+  margin: 20px 0px;
 }
 
-.heading h1{
-    font-size: 3.5rem;
-    line-height: 72px;
+.heading h1 {
+  font-size: 3.5rem;
+  line-height: 72px;
 }
 
-.heading h1 span{
-    background-color: rgb(40, 40, 40);
-    border-radius: 10px 0px 10px 0px;
+.heading h1 span {
+  background-color: var(--heading-color);
+  border-radius: 10px 0px 10px 0px;
 
-    color: white;
-    padding: 6px 12px;
-}
-
-/*=================================*/
-/*==============Footer=============*/
-/*=================================*/
-
-footer {
-    padding: 40px;
-}
-
-footer p{
-    color: rgb(40, 40, 40);
-    text-align: center;
-}
-
-body.dark footer p {
-    color: #cacaca;
-    text-align: center;
+  color: var(--heading-font-color);
+  padding: 6px 12px;
 }

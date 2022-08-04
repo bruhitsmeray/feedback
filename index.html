@@ -1,92 +1,136 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "utf-8">
-        <meta http-equiv = "X-UA-Compatible" content = "ie-edge">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>feedback</title>
-        <link rel="stylesheet" href="./styles/navbar.css">
-        <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/panel.css">
-        <link rel = "icon" href = "assets/logo.png">
+    <title>feedback</title>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/panel.css" />
+    <link rel="icon" href="assets/logo.png" />
 
-        <!-- Unicons CDN Link for Icons -->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
-        
-        <script src="https://kit.fontawesome.com/d8800230fc.js" crossorigin="anonymous"></script>
-    </head>
-    
-    <body id="main">
-        <div class="nav-container">
-            <header>
-                <a href="index.html" class="logo">whiteex</a>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="https://dev-whiteex.github.io/" target="_blank">Home</a></li>
-                        <li><a href="https://ko-fi.com/whiteex" target="_blank">Buy me a coffee</a></li>
-                        <li><a href="https://github.com/dev-whiteex" target="_blank">Github</a></li>
-                    </ul>
-                </nav>
-                <input type="checkbox" class="checkbox" id="checkbox" checked>
-                <label for="checkbox" class="label"><div class="ball"></div></label>
-            </header>
-            <div class="message">
-                <h3><a href="https://discord.com/oauth2/authorize?client_id=772944646195511297&scope=bot&permissions=2129853695" target="_blank">Eutera 4.5.2 is now available.</a></h3>
-            </div>
+    <!-- Unicons CDN Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
+    />
 
-            <section id="feedback">
-                <div class="container">
-                    <div class="title">
-                        <h2><span>Feedback</span></h2>
-                    </div>
-                    <div class="content">
-                        <p>Please send your feedback.</p>
-                        <form class="contact-form" action="https://formspree.io/f/xpzboqol" target="_blank" method="POST">
-                            <div class="form-grid">
-                                <div class = "form-group-01">
-                                    <label for = "your-name">First Name:</label>
-                                    <input type = "text" name = "firstname" placeholder = "PLEASE ENTER YOUR NAME.">
-                                </div>
-                                <div class = "form-group-02">
-                                    <label for = "your-name">Last Name:</label>
-                                    <input type = "text" name = "lastname" placeholder = "PLEASE ENTER YOUR NAME.">
-                                </div>
-                                <div class = "form-group">
-                                    <label for = "soft-name">Software:</label>
-                                    <select name = "software" id = "name">
-                                        <option value = "decay" selected = "selected">Decay</option>
-                                        <option value = "eutera">Eutera</option>
-                                        <option value = "console">conSole</option>
-                                        <option value = "wiman">WiMan</option>
-                                    </select>
-                                </div>
-                                <div class = "form-group">
-                                    <label for = "soft-name">PLATFORM:</label>
-                                    <select name = "platform">
-                                        <option value = "Windows" selected = "selected">Windows</option>
-                                        <option value = "MacOS">macOS</option>
-                                        <option value = "Linux">Linux</option>
-                                    </select>
-                                </div>
-                            </div>
+    <script
+      src="https://kit.fontawesome.com/d8800230fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-                            <div class = "form-group">
-                                <label for = "your-email">EMAIL:</label>
-                                <input type = "text" name = "email" placeholder = "PLEASE ENTER YOUR EMAIL." class="mail">
-                            </div>
-                            <div class = "form-group">
-                                <label for = "issue">FEEDBACK:</label>
-                                <input type = "text" name = "issue" placeholder = "GIVE ME YOUR FEEDBACK.">
-                            </div>
-                            <input type = "submit" value = "SEND FEEDBACK" class = "contact-btn">
-                        </form>
-                    </div>
+  <body id="main">
+    <div class="nav-container">
+      <header>
+        <a href="index.html" class="logo">whiteex</a>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="https://dev-whiteex.github.io/" target="_blank">Home</a>
+            </li>
+            <li>
+              <a href="https://ko-fi.com/whiteex" target="_blank"
+                >Buy me a coffee</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/dev-whiteex" target="_blank"
+                >Github</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <input type="checkbox" class="checkbox" id="checkbox" checked />
+        <label for="checkbox" class="label"><div class="ball"></div></label>
+      </header>
+      <div class="message">
+        <h3>
+          <a
+            href="https://discord.com/oauth2/authorize?client_id=772944646195511297&scope=bot&permissions=2129853695"
+            target="_blank"
+            >Eutera 4.5.2 is now available.</a
+          >
+        </h3>
+      </div>
+
+      <section id="feedback">
+        <div class="container">
+          <div class="title">
+            <h2><span>Feedback</span></h2>
+          </div>
+          <div class="content">
+            <p>Please send your feedback.</p>
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/xpzboqol"
+              target="_blank"
+              method="POST"
+            >
+              <div class="form-grid">
+                <div class="form-group-01">
+                  <label for="your-name">First Name:</label>
+                  <input
+                    type="text"
+                    name="firstname"
+                    placeholder="PLEASE ENTER YOUR NAME."
+                  />
                 </div>
-            </section>
-        </div>
+                <div class="form-group-02">
+                  <label for="your-name">Last Name:</label>
+                  <input
+                    type="text"
+                    name="lastname"
+                    placeholder="PLEASE ENTER YOUR NAME."
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="soft-name">Software:</label>
+                  <select name="software" id="name">
+                    <option value="decay" selected="selected">Decay</option>
+                    <option value="eutera">Eutera</option>
+                    <option value="console">conSole</option>
+                    <option value="wiman">WiMan</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="soft-name">PLATFORM:</label>
+                  <select name="platform">
+                    <option value="Windows" selected="selected">Windows</option>
+                    <option value="MacOS">macOS</option>
+                    <option value="Linux">Linux</option>
+                  </select>
+                </div>
+              </div>
 
-        <script src="scripts/preferences/dark.js" type="module"></script>
-        <script src="scripts/jquery.js"></script>
-    </body>
+              <div class="form-group">
+                <label for="your-email">EMAIL:</label>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="PLEASE ENTER YOUR EMAIL."
+                  class="mail"
+                />
+              </div>
+              <div class="form-group">
+                <label for="issue">FEEDBACK:</label>
+                <input
+                  type="text"
+                  name="issue"
+                  placeholder="GIVE ME YOUR FEEDBACK."
+                />
+              </div>
+              <input type="submit" value="SEND FEEDBACK" class="contact-btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="scripts/preferences/themeHandler.js" type="module"></script>
+    <script src="scripts/jquery.js"></script>
+  </body>
 </html>
