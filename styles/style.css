@@ -20,15 +20,15 @@
 }
 
 [data-theme="dark"] {
-  --bg-color: #282828;
-  --box-color: #333;
+  --bg-color: #393e41;
+  --box-color: #454b4f;
   --border-color: rgba(244, 245, 255, 0.4);
   --font-color: #fff;
 
   --heading-color: #fff;
   --heading-font-color: #424242;
 
-  --primary-color: #fbab4d;
+  --primary-color: #fa7921;
   --secondary-color: #fdcf99;
 }
 
